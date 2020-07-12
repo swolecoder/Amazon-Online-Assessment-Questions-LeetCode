@@ -10,7 +10,6 @@ var searchMatrix = function(matrix, target) {
   let c= matrix[0].length-1;
   let r = 0;
 
-
  while( r < matrix.length && c >=0){
      if(matrix[r][c] == target){
          return true
