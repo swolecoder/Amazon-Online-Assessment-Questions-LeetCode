@@ -12,10 +12,7 @@ const numIslands = function (grid) {
             }
         }
     }
-
     return count;
-
-
 
     function dfs(i, j) {
 
