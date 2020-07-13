@@ -6,10 +6,11 @@
  */
 
 
+const mod = 1000000007;
+let map = new Map();
 
 var numRollsToTarget = function (d, f, target) {
-    const mod = 10000000007;
-    let map = new Map();
+
     if (target < d || target > d * f) return 0;
 
     if (d == 1) return target <= f ? 1 : 0;
@@ -17,7 +18,6 @@ var numRollsToTarget = function (d, f, target) {
     let k = `${d}${f}${target}`;
 
     if (!map.has(k)) {
-
 
         let ways = 0;
         for (let i = 1; i <= f; i++) {
